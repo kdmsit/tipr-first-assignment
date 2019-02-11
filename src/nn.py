@@ -74,40 +74,36 @@ def getAccuracy(testSet, predictions):
 
 
 def nearestNeighbour(trainData,trainLabels,testData,testLabels):
-    k = 7
+
+    k = 5
     predictions = []
     accuracies = []
     correctPrediction = 0
+
     # region My KNN Classifier Code
+    print("Executing Custom Nearest Neighbour Classifier")
     for i in range(0, len(testData)):
         distance = getAllNeighborsWithDistance(trainData, trainLabels, testData[i])
         kNearestNeighbors = getKNearestNeighbor(distance, k)
         result = getCloseLabels(kNearestNeighbors)
         predictions.append(result)
-        #print("Predicted: ",result,"Actual:",testLabels[i])
-        # predictions.append(result)
         if (testLabels[i] == result):
             correctPrediction = correctPrediction + 1
     accuracyOfMyCode = (correctPrediction / len(testData)) * 100.0
     f1_score_macro=f1_score(testLabels, predictions, average='macro')
     f1_score_micro = f1_score(testLabels, predictions, average='micro')
-    print("K-Nearest Neighbour:Custom Code Test Accuracy: ", accuracyOfMyCode)
-    print("K-Nearest Neighbour:Custom Code Test F1-Score(Macro): ", f1_score_macro)
-    print("K-Nearest Neighbour:Custom Code Test F1-Score(Micro): ", f1_score_micro)
     # endregion
 
     # region Sklearn Package KNN
     '''
+    print("Executing Sklearn Nearest Neighbour Classifier")
     model = KNeighborsClassifier(n_neighbors=k)
     model.fit(trainData, trainLabels)
     predictions = model.predict(testData)
     score = model.score(testData, testLabels)
-    accuracies.append(score * 100)
-    print("K-Nearest Neighbour:Sklearn Library Code Test Accuracy: ", accuracies)
-    print("K-Nearest Neighbour:Sklearn Library Test F1-Score(Macro): ",
-          f1_score(testLabels, predictions, average='macro'))
-    print("K-Nearest Neighbour:Sklearn Library Test F1-Score(Micro): ",
-          f1_score(testLabels, predictions, average='micro'))
+    accuracyOfMyCode=score*100
+    f1_score_macro=f1_score(testLabels, predictions, average='macro')
+    f1_score_micro=f1_score(testLabels, predictions, average='micro')
     '''
     # endregion
 

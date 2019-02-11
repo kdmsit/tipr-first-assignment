@@ -19,10 +19,10 @@ def classPartition(trainDataSet,trainLabels):
     for i in range(len(trainDataSet)):
         dataElement=list(trainDataSet[i])
         dataLabel=trainLabels[i]
-        if(dataLabel!=3):
-            if(dataLabel not in ClassPartitionSet):
-                ClassPartitionSet[dataLabel]=[]
-            ClassPartitionSet[dataLabel].append(dataElement)
+        #if(dataLabel!=3):
+        if(dataLabel not in ClassPartitionSet):
+            ClassPartitionSet[dataLabel]=[]
+        ClassPartitionSet[dataLabel].append(dataElement)
     return ClassPartitionSet
 
 def meanOfClass(featureValues):
@@ -78,7 +78,6 @@ def calculateClassConditionalDensities(meanStdSet, testInputVector):
     Author: KD
     Details: This code calculates the class conditional densities of input vector for each class.
     '''
-
     classConditionalProb = {}
     for classlabel, classmeanStd in meanStdSet.items():
         #classConditionalProb[classlabel] = 1
@@ -102,7 +101,6 @@ def bayesClassifier(trainData, trainLabels, testData,testLabels):
         Author: KD
         Details: This is the main BayesClassifier function.
         '''
-
     # region handle older versions of sklearn
     if int((sklearn.__version__).split(".")[1]) < 18:
         from sklearn.cross_validation import train_test_split
@@ -111,18 +109,22 @@ def bayesClassifier(trainData, trainLabels, testData,testLabels):
         from sklearn.model_selection import train_test_split
     # endregion
 
-    # region Sklearn Package Naive Bayes
+    # region Sklearn Package  Bayes
     '''
     from sklearn.naive_bayes import GaussianNB
+    print("Executing Sklearn Bayes Classifier")
     gnb = GaussianNB()
-    y_pred = gnb.fit(dataMatrix, labelMatrix).predict(dataMatrix)
-    Total = dataMatrix.shape[0]
-    predicted = Total - (labelMatrix != y_pred).sum()
-    accuracy = (predicted / Total) * 100.0
-    print("Bayes:Library Code Runs:",accuracy)
+    y_pred = gnb.fit(trainData, trainLabels).predict(testData)
+    Total = len(testData)
+    predicted = Total - (testLabels != y_pred).sum()
+    accuracyOfMyCode = (predicted / Total) * 100.0
+    f1_score_macro = f1_score(testLabels, y_pred, average='macro')
+    f1_score_micro = f1_score(testLabels, y_pred, average='micro')
     '''
     # endregion
 
+    # region Custom  Bayes Classifier
+    print("Executing Custom Bayes Classifier")
     classPartitionSet = classPartition(trainData, trainLabels)
     priorProbSet = {}
     for classValue, features in classPartitionSet.items():
@@ -157,7 +159,7 @@ def bayesClassifier(trainData, trainLabels, testData,testLabels):
     accuracyOfMyCode = (accuracy / len(testData)) * 100.0
     f1_score_macro = f1_score(testLabels, predictions, average='macro')
     f1_score_micro = f1_score(testLabels, predictions, average='micro')
-    print("Bayes Classifier:Custom Code Test Accuracy ", accuracyOfMyCode)
-    print("Bayes Classifier:Custom Code Test F1-Score(Macro): ", f1_score_macro)
-    print("Bayes Classifier:Custom Code Test F1-Score(Micro): ", f1_score_micro)
+    # endregion
+
+
     return accuracyOfMyCode, f1_score_macro, f1_score_micro

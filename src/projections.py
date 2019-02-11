@@ -25,3 +25,29 @@ def randomProjection(dataMatrix,noOfColumns,K,inputFilePath,out):
     outputFileName =out+'_' + str(K) + '.csv'
     np.savetxt(inputFilePath + outputFileName, Enorm, delimiter=" ")
     return Enorm
+
+
+def randomProjectionTwitter(dataMatrix,testMatrix,noOfColumns,K,inputFilePath,out):
+    '''
+    :param dataMatrix:
+    :param noOfColumns:
+    :param inputFilePath:
+    :param out:
+    :return:
+    This Region Of code Does The following
+        1.Generate Random Matrix On Gaussian Distribution with mean=0 and Variance=1.
+        2.Multiply Data Matrix with Random Matrix and finally multiply with Normalised Value.
+        3.We save the output matrix in output file path.
+    '''
+    normalisedFactor = 1 / (math.sqrt(K))
+    randMatrix = np.random.normal(0, 1, (noOfColumns, K))
+    noOfRowsRand = len(randMatrix)
+    noOfColumnsRand = len(randMatrix[0])
+    # print(noOfRows, noOfColumns)
+    Emuldata = np.matmul(dataMatrix, randMatrix)
+    Emultest= np.matmul(testMatrix, randMatrix)
+    Enormdata = np.multiply(normalisedFactor, Emuldata)
+    Enormtest = np.multiply(normalisedFactor, Emultest)
+    outputFileName =out+'_' + str(K) + '.csv'
+    np.savetxt(inputFilePath + outputFileName, Emuldata, delimiter=" ")
+    return Emuldata,Emultest

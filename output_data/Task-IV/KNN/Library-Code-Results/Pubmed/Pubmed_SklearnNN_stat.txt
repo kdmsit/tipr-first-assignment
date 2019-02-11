@@ -1,0 +1,38 @@
+Processing Pubmed DataSet.......
+Sklearn K-NN Classifier Statistcs:
+K-Value Taken:5
+Original Dimension :128
+Test Accuracy 35.426225549384206
+Test Macro F1-score 0.3340243935569931
+Test Micro F1-score 0.354262255493842
+
+Reduced Dimension :2
+Test Accuracy 36.15068823955566
+Test Macro F1-score 0.3421774874961096
+Test Micro F1-score 0.3615068823955567
+
+Reduced Dimension :4
+Test Accuracy 34.84665539724704
+Test Macro F1-score 0.32770939705137
+Test Micro F1-score 0.3484665539724704
+
+Reduced Dimension :8
+Test Accuracy 35.546969331079445
+Test Macro F1-score 0.3339614472983337
+Test Micro F1-score 0.3554696933107945
+
+Reduced Dimension :16
+Test Accuracy 34.75006037189085
+Test Macro F1-score 0.3285149526196008
+Test Micro F1-score 0.34750060371890845
+
+Reduced Dimension :32
+Test Accuracy 36.17483699589471
+Test Macro F1-score 0.3405219716918683
+Test Micro F1-score 0.36174836995894716
+
+Reduced Dimension :64
+Test Accuracy 35.64356435643564
+Test Macro F1-score 0.3372444946413325
+Test Micro F1-score 0.3564356435643564
+

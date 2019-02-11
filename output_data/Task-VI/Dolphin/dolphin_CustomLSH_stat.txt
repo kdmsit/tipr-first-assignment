@@ -1,0 +1,8 @@
+Processing dolphin DataSet.......
+Custom LSH Classifier Statistcs:
+
+Original Dimension :32
+Test Accuracy 53.84615384615385
+Test Macro F1-score 0.33035714285714285
+Test Micro F1-score 0.5384615384615384
+

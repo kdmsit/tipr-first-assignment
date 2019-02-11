@@ -1,0 +1,38 @@
+Processing Pubmed DataSet.......
+Custom K-NN Classifier Statistcs:
+K-Value Taken:5
+Original Dimension :128
+Test Accuracy 37.09248973677855
+Test Macro F1-score 0.33620175124960067
+Test Micro F1-score 0.3709248973677856
+
+Reduced Dimension :2
+Test Accuracy 36.778555904370926
+Test Macro F1-score 0.33436654754556877
+Test Micro F1-score 0.36778555904370924
+
+Reduced Dimension :4
+Test Accuracy 36.223134508572805
+Test Macro F1-score 0.32711693847711626
+Test Micro F1-score 0.3622313450857281
+
+Reduced Dimension :8
+Test Accuracy 38.83120019319005
+Test Macro F1-score 0.3499617571817706
+Test Micro F1-score 0.3883120019319005
+
+Reduced Dimension :16
+Test Accuracy 38.613861386138616
+Test Macro F1-score 0.3513597776820192
+Test Micro F1-score 0.38613861386138615
+
+Reduced Dimension :32
+Test Accuracy 36.80270466070997
+Test Macro F1-score 0.335663079391414
+Test Micro F1-score 0.36802704660709973
+
+Reduced Dimension :64
+Test Accuracy 36.80270466070997
+Test Macro F1-score 0.3338611004693058
+Test Micro F1-score 0.36802704660709973
+

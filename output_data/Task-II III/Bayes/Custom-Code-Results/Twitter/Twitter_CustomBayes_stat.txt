@@ -1,0 +1,52 @@
+Custom Bayes Classifier Statistcs:
+Original Dimension :2602
+Test Accuracy 57.41
+Test Macro F1-score 0.50
+Test Micro F1-score 0.5741
+
+Reduced Dimension :2
+Test Accuracy 12.16
+Test Macro F1-score 0.072
+Test Micro F1-score 0.1216
+
+Reduced Dimension :4
+Test Accuracy 54.66
+Test Macro F1-score 0.23
+Test Micro F1-score 0.546
+
+Reduced Dimension :8
+Test Accuracy 54.66
+Test Macro F1-score 0.23
+Test Micro F1-score 0.546
+
+Reduced Dimension :16
+Test Accuracy 12.16
+Test Macro F1-score 0.072
+Test Micro F1-score 0.121
+
+Reduced Dimension :32
+Test Accuracy 12.16
+Test Macro F1-score 0.072
+Test Micro F1-score 0.121
+
+Reduced Dimension :64
+Test Accuracy 54.66
+Test Macro F1-score 0.23
+Test Micro F1-score 0.546
+
+Reduced Dimension :128
+Test Accuracy 33.16
+Test Macro F1-score 0.16
+Test Micro F1-score 0.331
+
+Reduced Dimension :256
+Test Accuracy 12.16
+Test Macro F1-score 0.072
+Test Micro F1-score 0.121
+
+Reduced Dimension :512
+Test Accuracy 12.16
+Test Macro F1-score 0.072
+Test Micro F1-score 0.121
+
+

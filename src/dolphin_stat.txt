@@ -1,0 +1,21 @@
+Processing dolphin DataSet.......
+Custom K-NN Classifier Statistcs:
+K-Value Taken:5
+
+KNN Test Accuracy 100.0
+KNN Test Macro F1-score 1.0
+KNN Test Micro F1-score 1.0
+
+Custom Bayes Classifier Statistcs:
+Original Dimension :32
+Bayes Test Accuracy 100.0
+Bayes Test Macro F1-score 1.0
+Bayes Test Micro F1-score 1.0
+
+Custom LSH Classifier Statistcs:
+
+Original Dimension :32
+LSH Test Accuracy 70.0
+LSH Test Macro F1-score 0.3666666666666667
+LSH Test Micro F1-score 0.7
+

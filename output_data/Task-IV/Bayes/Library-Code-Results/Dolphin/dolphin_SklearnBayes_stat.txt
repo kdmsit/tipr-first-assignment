@@ -1,0 +1,27 @@
+Processing dolphin DataSet.......
+Sklearn Bayes Classifier Statistcs:
+Original Dimension :32
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+
+Reduced Dimension :2
+Test Accuracy 84.61538461538461
+Test Macro F1-score 0.6494949494949496
+Test Micro F1-score 0.8461538461538461
+
+Reduced Dimension :4
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+
+Reduced Dimension :8
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+
+Reduced Dimension :16
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+

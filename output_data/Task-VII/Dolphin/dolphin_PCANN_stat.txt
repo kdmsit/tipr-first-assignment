@@ -1,0 +1,23 @@
+Processing dolphin DataSet.......
+PCA K-NN Classifier Statistcs:
+K-Value Taken:5
+Reduced Dimension :2
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+
+Reduced Dimension :4
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+
+Reduced Dimension :8
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+
+Reduced Dimension :16
+Test Accuracy 92.3076923076923
+Test Macro F1-score 0.7272727272727273
+Test Micro F1-score 0.9230769230769231
+

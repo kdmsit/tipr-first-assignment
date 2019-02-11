@@ -1,0 +1,57 @@
+Sklearn K-NN Classifier Statistcs:
+K-Value Taken:5
+Original Dimension :2602
+Test Accuracy 50.083333333333336
+Test Macro F1-score 0.42589135469252426
+Test Micro F1-score 0.5008333333333334
+
+Reduced Dimension :2
+Test Accuracy 43.0
+Test Macro F1-score 0.3416036818172574
+Test Micro F1-score 0.42999999999999994
+
+Reduced Dimension :4
+Test Accuracy 38.416666666666664
+Test Macro F1-score 0.3052703510447173
+Test Micro F1-score 0.38416666666666666
+
+Reduced Dimension :8
+Test Accuracy 41.083333333333336
+Test Macro F1-score 0.3294753067469755
+Test Micro F1-score 0.4108333333333333
+
+Reduced Dimension :16
+Test Accuracy 40.08333333333333
+Test Macro F1-score 0.3383213770223654
+Test Micro F1-score 0.4008333333333333
+
+Reduced Dimension :32
+Test Accuracy 40.91666666666667
+Test Macro F1-score 0.3354735211931614
+Test Micro F1-score 0.4091666666666666
+
+Reduced Dimension :64
+Test Accuracy 41.91666666666667
+Test Macro F1-score 0.33277882114182394
+Test Micro F1-score 0.4191666666666667
+
+Reduced Dimension :128
+Test Accuracy 40.583333333333336
+Test Macro F1-score 0.31674005777255637
+Test Micro F1-score 0.4058333333333333
+
+Reduced Dimension :256
+Test Accuracy 41.16666666666667
+Test Macro F1-score 0.3071594842122211
+Test Micro F1-score 0.4116666666666667
+
+Reduced Dimension :512
+Test Accuracy 40.666666666666664
+Test Macro F1-score 0.30337733545280715
+Test Micro F1-score 0.4066666666666667
+
+Reduced Dimension :1024
+Test Accuracy 40.08333333333333
+Test Macro F1-score 0.2948178815211704
+Test Micro F1-score 0.4008333333333333
+

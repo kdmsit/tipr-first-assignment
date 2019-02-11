@@ -1,0 +1,7 @@
+Custom LSH Classifier Statistcs:
+
+Original Dimension :2602
+Test Accuracy 50.16666666666667
+Test Macro F1-score 0.2227155012948576
+Test Micro F1-score 0.5016666666666667
+

@@ -1,0 +1,37 @@
+Processing Pubmed DataSet.......
+Sklearn Bayes Classifier Statistcs:
+Original Dimension :128
+Test Accuracy 42.47766240038638
+Test Macro F1-score 0.4009402017185913
+Test Micro F1-score 0.4247766240038638
+
+Reduced Dimension :2
+Test Accuracy 39.94204298478628
+Test Macro F1-score 0.28767697955973204
+Test Micro F1-score 0.39942042984786286
+
+Reduced Dimension :4
+Test Accuracy 40.883844482009174
+Test Macro F1-score 0.3044882645865871
+Test Micro F1-score 0.40883844482009174
+
+Reduced Dimension :8
+Test Accuracy 41.63245592851968
+Test Macro F1-score 0.3087046705717264
+Test Micro F1-score 0.4163245592851968
+
+Reduced Dimension :16
+Test Accuracy 43.37116638493118
+Test Macro F1-score 0.33370250162231524
+Test Micro F1-score 0.43371166384931176
+
+Reduced Dimension :32
+Test Accuracy 43.612653948321665
+Test Macro F1-score 0.38521141850860935
+Test Micro F1-score 0.4361265394832166
+
+Reduced Dimension :64
+Test Accuracy 42.83989374547211
+Test Macro F1-score 0.3805061525365557
+Test Micro F1-score 0.4283989374547211
+

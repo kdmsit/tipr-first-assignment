@@ -1,0 +1,33 @@
+Processing Pubmed DataSet.......
+PCA K-NN Classifier Statistcs:
+K-Value Taken:5
+Reduced Dimension :2
+Test Accuracy 37.044192224100456
+Test Macro F1-score 0.3350899339932539
+Test Micro F1-score 0.3704419222410046
+
+Reduced Dimension :4
+Test Accuracy 38.87949770586815
+Test Macro F1-score 0.35217813173872065
+Test Micro F1-score 0.38879497705868143
+
+Reduced Dimension :8
+Test Accuracy 38.17918377203574
+Test Macro F1-score 0.3447784986253271
+Test Micro F1-score 0.3817918377203574
+
+Reduced Dimension :16
+Test Accuracy 38.17918377203574
+Test Macro F1-score 0.3462745848649517
+Test Micro F1-score 0.3817918377203574
+
+Reduced Dimension :32
+Test Accuracy 37.84110118328906
+Test Macro F1-score 0.34587270205127146
+Test Micro F1-score 0.37841101183289066
+
+Reduced Dimension :64
+Test Accuracy 37.1649360057957
+Test Macro F1-score 0.3351053248831996
+Test Micro F1-score 0.371649360057957
+
